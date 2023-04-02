@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://dwq3iinf3l4tf"]
+
+[ext_resource type="Script" path="res://window.gd" id="1_xqwaf"]
+[ext_resource type="Shader" path="res://fractal.gdshader" id="2_nugeg"]
+[ext_resource type="Texture2D" uid="uid://lmauionh3ifd" path="res://icon.svg" id="3_8wk0i"]
+[ext_resource type="Script" path="res://mandelbrot.gd" id="4_r67ng"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fpgrq"]
+shader = ExtResource("2_nugeg")
+shader_parameter/MAX_ITERATIONS = 100
+shader_parameter/background_color = Quaternion(0, 0, 0, 1)
+shader_parameter/zoom = null
+shader_parameter/pos_x = null
+shader_parameter/pos_y = null
+shader_parameter/mode = null
+shader_parameter/mode_z = null
+
+[node name="window" type="Node2D"]
+script = ExtResource("1_xqwaf")
+
+[node name="mandelbrot" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_fpgrq")
+texture = ExtResource("3_8wk0i")
+script = ExtResource("4_r67ng")
