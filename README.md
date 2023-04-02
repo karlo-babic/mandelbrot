@@ -1,5 +1,5 @@
 # mandelbrot
-Mandelbrot fractal viewer (Godot engine)
+Mandelbrot fractal viewer (Godot engine v4.0.1)
 
 ## keybindings:
 - m: switches rendering mode
