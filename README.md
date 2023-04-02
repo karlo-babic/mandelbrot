@@ -7,3 +7,5 @@ Mandelbrot fractal viewer (Godot engine v4.0.1)
 - esc: quit
 - enter: reset position and scale
 - f11: fullscreen toggle
+
+https://youtu.be/QXdkbiF1QAY
